@@ -32,7 +32,7 @@
 
   <<section class="hero">
   <div class="hero-bg">
-    <img src="images/pool.png" alt="Школа плавания Атлант" />
+    <img src="images/pool.jpg" alt="Школа плавания Атлант" />
     <div class="overlay"></div>
   </div>
 
@@ -812,25 +812,40 @@ Berlin Nord, Berlin Ost</p>
 
 
   <section id="contacts" class="info-section">
-    <div class="container">
-      <h2>Контакты</h2>
+  <div class="container">
+    <h2>Контакты</h2>
 
-      <div class="contacts-grid">
-        <div>
-          <p><strong>Телефон:</strong> +49 000 000 00 00</p>
-          <p><strong>Email:</strong> info@atlant.de</p>
-          <p><strong>Адрес:</strong> Berlin, Musterstraße 1</p>
-        </div>
-
-        <form class="contact-form">
-          <input type="text" placeholder="Ваше имя" />
-          <input type="tel" placeholder="Ваш телефон" />
-          <textarea placeholder="Ваш комментарий"></textarea>
-          <button type="submit" class="main-btn">Отправить заявку</button>
-        </form>
+    <div class="contacts-grid">
+      <div>
+        <p><strong>Телефон:</strong> +7 913 148 22 99</p>
+        <p><strong>Email:</strong> info@atlant.ru</p>
+        <p><strong>Адрес:</strong> Омск, Дианова 14а</p>
       </div>
+
+      <form
+        class="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input type="hidden" name="access_key" value="11678b3b-046b-4cad-b640-39b2640128e6">
+        <input type="hidden" name="subject" value="Новая заявка с сайта Атлант">
+        <input type="hidden" name="from_name" value="Сайт Атлант">
+        <input type="hidden" name="redirect" value="https://pankracdara.github.io/Atlant-swim/thanks.html">
+
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+        <textarea name="comment" placeholder="Ваш комментарий"></textarea>
+
+        <label class="agree">
+          <input type="checkbox" name="policy" required>
+          <span>Я даю согласие на обработку персональных данных и принимаю политику конфиденциальности</span>
+        </label>
+
+        <button type="submit" class="main-btn">Отправить заявку</button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
   <footer class="footer">
     <div class="container footer-inner">

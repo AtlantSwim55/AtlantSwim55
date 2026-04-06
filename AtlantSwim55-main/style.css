@@ -142,9 +142,11 @@ a {
 }
 
 .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(230, 240, 250, 0.76);
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.1)
+  );
 }
 
 .hero-content {
