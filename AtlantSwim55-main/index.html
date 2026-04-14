@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Атлант — школа плавания</title>
   <link rel="icon" href="favicon.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -22,11 +22,11 @@
         <a href="#coaches">Тренеры</a>
         <a href="#prices">Услуги</a>
         <a href="#schedule">Расписание</a>
-        <a href="#contacts">Контакты</a>
+        <a href="#contacts">Обратная связь</a>
       </nav>
 
       <a href="#contacts" class="header-btn">Записаться</a>
-<a href="#contacts" class="main-btn">Записаться на пробное занятие</a>
+
 
     </div>
   </header>
@@ -45,7 +45,7 @@
       Обучаем детей и взрослых плавать уверенно, безопасно и с удовольствием
     </p>
 
-    <a href="#contacts" class="main-btn">Записаться на пробное занятие</a>
+    <a href="#contacts" class="site-btn hero-btn">Записаться на пробное занятие</a>
 
     <div class="features">
       <div class="feature">
@@ -810,72 +810,86 @@ Berlin Nord, Berlin Ost</p>
   </div>
 </section>
 
-
-
-  <section id="contacts" class="info-section">
+<section id="contacts" class="contacts-section">
   <div class="container">
-    <h2>Контакты</h2>
+    <h2 class="section-title">Обратная связь</h2>
+    <p class="section-subtitle">
+      Оставьте заявку на занятие — мы свяжемся с вами и подберём удобное время
+    </p>
 
-    <div class="contacts-grid">
-      <div>
-        <p><strong>Телефон:</strong> +7 913 148 22 99</p>
-        <p><strong>Email:</strong> info@atlant.ru</p>
-        <p><strong>Адрес:</strong> Омск, Дианова 14а</p>
-      </div>
+    <form action="https://formspree.io/f/xqewakvp" method="POST" class="contact-form">
 
-     <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-  <input type="hidden" name="access_key" value="11678b3b-046b-4cad-b640-39b2640128e6">
-  <input type="hidden" name="subject" value="Новая заявка с сайта Атлант">
+      <input type="text" name="name" placeholder="Ваше имя" required>
 
-  <input type="text" name="name" placeholder="Ваше имя" required>
-  <input type="email" name="email" placeholder="Ваш email" required>
-  <input type="tel" name="phone" placeholder="Ваш телефон" required>
-  <textarea name="message" placeholder="Ваш комментарий" required></textarea>
+      <input type="tel" name="phone" placeholder="Ваш телефон" required>
 
-  <label class="agree">
-    <input type="checkbox" required>
-    <span>Я даю согласие на обработку персональных данных</span>
-  </label>
+      <select name="who" required>
+        <option value="" disabled selected>Кто будет тренироваться?</option>
+        <option value="Ребёнок">Ребёнок</option>
+        <option value="Взрослый">Взрослый</option>
+      </select>
 
-  <button type="submit" class="main-btn">Отправить заявку</button>
-</form>
+      <select name="level" required>
+        <option value="" disabled selected>Уровень подготовки</option>
+        <option value="С нуля">С нуля</option>
+        <option value="Начальный">Начальный</option>
+        <option value="Продвинутый">Продвинутый</option>
+      </select>
 
-  <footer class="footer">
-    <div class="container footer-inner">
+      <select name="time" required>
+        <option value="" disabled selected>Когда удобно?</option>
+        <option value="Утро">Утро</option>
+        <option value="День">День</option>
+        <option value="Вечер">Вечер</option>
+      </select>
 
-      <div class="footer-column">
-        <h3>Школа плавания «Атлант»</h3>
-        <p>Обучаем детей и взрослых плавать уверенно, безопасно и с удовольствием.</p>
-      </div>
+      <textarea name="message" placeholder="Комментарий"></textarea>
 
-      <div class="footer-column">
-        <h4>Контакты</h4>
-        <p>Телефон: +49 000 000 00 00</p>
-        <p>Email: info@atlant.de</p>
-        <p>Адрес: Berlin, Musterstraße 1</p>
-      </div>
+      <label class="agree">
+        <input type="checkbox" required>
+        <span>Я даю согласие на обработку персональных данных</span>
+      </label>
 
-      <div class="footer-column">
-        <h4>Соцсети</h4>
-        <p><a href="#">Instagram</a></p>
-        <p><a href="#">Telegram</a></p>
-        <p><a href="#">WhatsApp</
+      <button type="submit" class="site-btn form-btn">Отправить</button>
+    </form>
+  </div>
+</section>
+  
+</section>
+<footer class="footer">
+  <div class="container footer-inner">
 
-
-a></p>
-      </div>
-
-      <div class="footer-column footer-map">
-        <h4>Карта</h4>
-        <div class="map-box">Здесь будет карта</div>
-      </div>
-
+    <div class="footer-column">
+      <h3>Школа плавания «Атлант»</h3>
+      <p>Обучаем детей и взрослых плавать уверенно, безопасно и с удовольствием.</p>
     </div>
 
-    <div class="footer-bottom">
-      <p>© 2026 Атлант. Все права защищены.</p>
+    <div class="footer-column">
+      <h4>Контакты</h4>
+      <p>Телефон: +7 913 148 22 99</p>
+      <p>Email: info@atlant.ru</p>
+      <p>Адрес: Омск, Дианова 14а</p>
     </div>
-  </footer>
+
+    <div class="footer-column">
+      <h4>Соцсети</h4>
+      <p><a href="#">Instagram</a></p>
+      <p><a href="#">Telegram</a></p>
+      <p><a href="#">WhatsApp</a></p>
+    </div>
+
+    <div class="footer-column footer-map">
+      <h4>Карта</h4>
+      <div class="map-box">Здесь будет карта</div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Атлант. Все права защищены.</p>
+  </div>
+</footer>
+
 
 </body>
 </html>
